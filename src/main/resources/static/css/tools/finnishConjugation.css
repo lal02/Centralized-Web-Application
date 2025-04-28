@@ -1,0 +1,38 @@
+/*background: radial-gradient(#002F6C 10%, white);
+background-image:   url(img.png);
+background-repeat: no-repeat;
+
+background-position:center;*/
+body {
+    background-image: url("../../images/finland_flag.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+td{
+    border: solid black 1px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color:rgb(211, 211, 211,0.5);
+
+}
+table{
+    border: solid black 1px;
+    align-content: center;
+    margin: auto;
+}
+#tableDiv{
+    display:none;
+    align-content: center;
+    text-align: center;
+
+    padding-bottom: 15px;
+}
+
+.verbInput{
+    align-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+

@@ -1,0 +1,1 @@
+create table temperature (id SERIAL primary key , value double precision not null, timestamp timestamp not null);

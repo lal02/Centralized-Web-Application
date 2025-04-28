@@ -1,0 +1,9 @@
+POST http://localhost:8080/co
+Content-Type: application/json
+
+{
+  "value" : 55,
+  "timestamp": "2024-11-01T23:07:36"
+}
+
+

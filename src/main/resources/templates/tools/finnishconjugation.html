@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finnish Conjugation</title>
+    <link rel="shortcut icon" href="#" />
+</head>
+<body>
+<div class="header">
+    <div class = "headerButtonBar">
+        <h1 style="text-align: center" >Centralized Web Application</h1>
+
+        <button onclick = "location.href='/'">Home</button>
+        <button onclick = "location.href='/sensordata'">Sensordaten</button>
+        <button onclick = "location.href='/rezepte'">Rezepte</button>
+        <div class="dropdown">
+            <button class = "dropdownHoverButton" id="toolsButton">Tools <img src = "/images/down_arrow.png" alt = "icon" ></button>
+            <div class = "dropdownContent">
+                <!--<button onclick = "location.href='/tools/converter'" >Einheiten Konvertierer</button>-->
+               <button onclick = "location.href='/tools/finanzrechner'">Finanzrechner</button>
+               <button onclick = "location.href='/tools/finnishconjugation'">Finnish Conjugation</button>
+                <!--<button onclick = "location.href='/tools/gamescalculator'">Spielerechner</button>-->
+               <button onclick = "location.href='/tools/passwordgenerator'">Passwort Generator</button>
+               <button onclick = "location.href='/tools/counter'">Textanalyse</button>
+               <button onclick = "location.href=('http://10.0.10.221:8080')">pdf Tools</button>
+           </div>
+       </div>
+       <div class="dropdown">
+           <button class = "dropdownHoverButton" id="mediaButton">Medien <img src = "/images/down_arrow.png" alt = "icon" ></button>
+           <div class = "dropdownContent">
+               <button onclick = "location.href='/media/overview'">Übersicht</button>
+               <button onclick = "location.href='/bookseries'">Buchserien</button>
+               <button onclick = "location.href='/books'">Bücher</button>
+               <button onclick = "location.href='/games'">Spiele</button>
+               <button onclick = "location.href='/movies'">Filme und Serien</button>
+           </div>
+       </div>
+   </div>
+   <br>
+   <br>
+   <h2 style="text-align:center">Finnish Conjugation</h2>
+
+   <br>
+</div>
+<div class ="verbInput">
+   <h4>Enter Finnish verb to conjugate</h4>
+   <p></p>
+   <input id="verbInput" required title="Enter Verb">
+   <p></p>
+   <button id="generateButton">generate</button>
+</div>
+<div id = "tableDiv">
+   <h4>Result Table</h4>
+   <p></p>
+   <!-- Table for results -->
+    <table id = "verbTable">
+        <tr>
+            <td>Person</td>
+            <td>Pronom</td>
+            <td>Verb</td>
+        </tr>
+        <tr>
+            <td>1. Person Singular</td>
+            <td>minä</td>
+            <td id="1pS"></td>
+        </tr>
+        <tr>
+            <td>2. Person Singular</td>
+            <td>sinä</td>
+            <td id="2pS"></td>
+        </tr>
+        <tr>
+            <td>3. Person Singular</td>
+            <td>hän</td>
+            <td id="3pS"></td>
+        </tr>
+        <tr>
+            <td>1. Person Plural</td>
+            <td>me</td>
+            <td id="1pP"></td>
+        </tr>
+        <tr>
+            <td>2. Person Plural</td>
+            <td>te</td>
+            <td id="2pP"></td>
+        </tr>
+        <tr>
+            <td>3. Person Plural</td>
+            <td>he</td>
+            <td id="3pP"></td>
+        </tr>
+    </table>
+</div>
+
+<footer class ="footer">
+    <p>Author: Lukas Albrecht</p>
+    <p>Software Engineer, Studying B.Sc. Computer Science</p>
+    <a href="mailto:lukas.albrecht-coding@web.de">Mail Contact</a>
+</footer>
+</body>
+
+
+<script src=/js/finnishConjugation.js></script>
+<link rel="stylesheet" href="/css/tools/finnishConjugation.css">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
+</html>

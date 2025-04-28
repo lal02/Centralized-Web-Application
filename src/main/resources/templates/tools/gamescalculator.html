@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="header">
+    <div class = "headerButtonBar">
+        <h1 style="text-align: center" >Centralized Web Application</h1>
+
+        <button onclick = "location.href='/'">Home</button>
+        <button onclick = "location.href='/sensordata'">Sensordaten</button>
+        <button onclick = "location.href='/rezepte'">Rezepte</button>
+        <div class="dropdown">
+            <button class = "dropdownHoverButton" id="toolsButton">Tools <img src = "/images/down_arrow.png" alt = "icon" ></button>
+            <div class = "dropdownContent">
+                <!--<button onclick = "location.href='/tools/converter'" >Einheiten Konvertierer</button>-->
+               <button onclick = "location.href='/tools/finanzrechner'">Finanzrechner</button>
+               <button onclick = "location.href='/tools/finnishconjugation'">Finnish Conjugation</button>
+                <!--<button onclick = "location.href='/tools/gamescalculator'">Spielerechner</button>-->
+               <button onclick = "location.href='/tools/passwordgenerator'">Passwort Generator</button>
+               <button onclick = "location.href='/tools/counter'">Textanalyse</button>
+               <button onclick = "location.href=('http://10.0.10.221:8080')">pdf Tools</button>
+           </div>
+       </div>
+       <div class="dropdown">
+           <button class = "dropdownHoverButton" id="mediaButton">Medien <img src = "/images/down_arrow.png" alt = "icon" ></button>
+           <div class = "dropdownContent">
+               <button onclick = "location.href='/media/overview'">Übersicht</button>
+               <button onclick = "location.href='/bookseries'">Buchserien</button>
+               <button onclick = "location.href='/books'">Bücher</button>
+               <button onclick = "location.href='/games'">Spiele</button>
+               <button onclick = "location.href='/movies'">Filme und Serien</button>
+           </div>
+       </div>
+   </div>
+   <br>
+   <br>
+   <h2 style="text-align:center">Spielerechner</h2>
+
+   <br>
+</div>
+<div style="border-width: 10px;border-color: black;border-style:solid;border-radius:10px">
+   <div style="text-align: center">
+       <h2>Bauarbeitertrank Rechner</h2>
+       <h3>Verbleibende Dauer vom Gebäude eingeben</h3>
+   </div>
+   <div class ="inputDiv">
+       <label for="daysInput">Days </label><input id="daysInput" type = "number">
+       <br>
+       <label for="hoursInput">Hours </label><input id="hoursInput" type = "number">
+       <br>
+       <label for="minutesInput">Minutes </label><input id="minutesInput" type = "number">
+       <br>
+       <button id ="calculateButton">calculate</button>
+       <br>
+       <br>
+       <label id="resultLabel"></label>
+   </div>
+
+</div>
+
+
+
+</body>
+
+<script src = "/js/gamescalculator.js"></script>
+<link rel="stylesheet" href="/css/general.css">
+</html>

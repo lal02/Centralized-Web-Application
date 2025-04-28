@@ -1,0 +1,28 @@
+body{
+    background-color: #11243a;
+    display: flex; /* Verwendung von Flexbox für Layout */
+    flex-direction: column; /* Vertikale Ausrichtung */
+    align-items: center; /* Zentrum für die Kinder-Elemente */
+    color:white;
+    padding-bottom: 0px;
+}
+
+#textInput {
+    width: 45%; /* Breite der Textarea */
+    height: 200px; /* Höhe der Textarea */
+    margin-right: 20px; /* Abstand zwischen textarea und checkboxDiv */
+}
+
+#checkboxDiv {
+    display: flex; /* Flexbox für die Checkboxen */
+    flex-direction: column; /* Vertikale Ausrichtung der Checkboxen */
+    margin-left: 20px; /* Abstand zwischen textarea und checkboxDiv */
+}
+
+#resultDiv {
+    margin-top: 20px; /* Abstand nach oben */
+    display: flex; /* Flexbox für das Ergebnis */
+    flex-direction: column; /* Vertikale Ausrichtung der Ergebnisse */
+    align-items: center; /* Zentriert die Ergebnisse */
+    text-align: center; /* Zentriert den Text */
+}

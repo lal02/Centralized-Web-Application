@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Finanzrechner Website</title>
+    <link rel="stylesheet" href="/css/tools/finanzrechner.css">
+    <link rel="shortcut icon" href="#" />
+</head>
+<body>
+<div class="header">
+    <div class = "headerButtonBar">
+        <h1 style="text-align: center" >Centralized Web Application</h1>
+
+        <button onclick = "location.href='/'">Home</button>
+        <button onclick = "location.href='/sensordata'">Sensordaten</button>
+        <button onclick = "location.href='/rezepte'">Rezepte</button>
+        <div class="dropdown">
+            <button class = "dropdownHoverButton" id="toolsButton">Tools <img src = "/images/down_arrow.png" alt = "icon" ></button>
+            <div class = "dropdownContent">
+                <!--<button onclick = "location.href='/tools/converter'" >Einheiten Konvertierer</button>-->
+               <button onclick = "location.href='/tools/finanzrechner'">Finanzrechner</button>
+               <button onclick = "location.href='/tools/finnishconjugation'">Finnish Conjugation</button>
+                <!--<button onclick = "location.href='/tools/gamescalculator'">Spielerechner</button>-->
+               <button onclick = "location.href='/tools/passwordgenerator'">Passwort Generator</button>
+               <button onclick = "location.href='/tools/counter'">Textanalyse</button>
+               <button onclick = "location.href=('http://10.0.10.221:8080')">pdf Tools</button>
+           </div>
+       </div>
+       <div class="dropdown">
+           <button class = "dropdownHoverButton" id="mediaButton">Medien <img src = "/images/down_arrow.png" alt = "icon" ></button>
+           <div class = "dropdownContent">
+               <button onclick = "location.href='/media/overview'">Übersicht</button>
+               <button onclick = "location.href='/bookseries'">Buchserien</button>
+               <button onclick = "location.href='/books'">Bücher</button>
+               <button onclick = "location.href='/games'">Spiele</button>
+               <button onclick = "location.href='/movies'">Filme und Serien</button>
+           </div>
+       </div>
+   </div>
+   <br>
+   <br>
+   <h2 style="text-align:center">Finanzrechner</h2>
+   <br>
+</div>
+
+
+<div class = "divs">
+   <h1>Zinsrechner</h1>
+   <h3>Zur Berechnung der Rendite bei 1 Jahr Laufzeit</h3>
+   Angelegtes Geld in € <input type="number" id="zinsAnlage"/>
+   Erwartete Rendite in % p.a. <input type="number" id="zinsRendite"/>
+   <button type="button" onclick="zinsRenditeBerechnen()">Berechnen!</button>
+   <label id ="zinsErgebnisLabel">Ergebnis: </label>
+</div>
+
+<div class = "divs">
+   <h1>Zinseszinsrechner</h1>
+   <h3>Zur Berechnung des Endkapitals bei thesaurierendem Anlegen der jährlichen Rendite</h3>
+   Angelegtes Geld in € <input type="number" id="zinsesZinsAnlage"/>
+   Erwartete Rendite in % p.a. <input type="number" id="zinsesZinsRendite"/>
+   Anlagedauer in Jahre <input type="number" id="anlageDauer"/>
+   Monatliche Sparquote in € <input type="number" id="monatlicheSparsumme"/>
+   <button type="button" onclick="zinsesZinsRenditeBerechnen()">Berechnen!</button>
+   <label id="gesamtEinzahlung"></label>
+   <label id ="zinsesZinsErgebnisLabel"></label>
+   <label id ="Gesamtvermoegen"></label>
+</div>
+
+<footer class ="footer">
+   <p>Author: Lukas Albrecht</p>
+   <p>Software Engineer, Studying B.Sc. Computer Science</p>
+   <a href="mailto:lukas.albrecht-coding@web.de">Mail Contact</a>
+</footer>
+</body>
+<script src="/js/finanzrechner.js"></script>
+<link rel="stylesheet" href="/css/general.css">
+</html>

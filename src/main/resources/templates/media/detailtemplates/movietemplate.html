@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Film und Serien Details</title>
+</head>
+<body>
+<div class="header">
+    <div class = "headerButtonBar">
+        <h1 style="text-align: center" >Centralized Web Application</h1>
+
+        <button onclick = "location.href='/'">Home</button>
+        <button onclick = "location.href='/sensordata'">Sensordaten</button>
+        <button onclick = "location.href='/rezepte'">Rezepte</button>
+        <div class="dropdown">
+            <button class = "dropdownHoverButton" id="toolsButton">Tools <img src = "/images/down_arrow.png" alt = "icon" ></button>
+            <div class = "dropdownContent">
+                <!--<button onclick = "location.href='/tools/converter'" >Einheiten Konvertierer</button>-->
+               <button onclick = "location.href='/tools/finanzrechner'">Finanzrechner</button>
+               <button onclick = "location.href='/tools/finnishconjugation'">Finnish Conjugation</button>
+                <!--<button onclick = "location.href='/tools/gamescalculator'">Spielerechner</button>-->
+               <button onclick = "location.href='/tools/passwordgenerator'">Passwort Generator</button>
+               <button onclick = "location.href='/tools/counter'">Textanalyse</button>
+               <button onclick = "location.href=('http://10.0.10.221:8080')">pdf Tools</button>
+           </div>
+       </div>
+       <div class="dropdown">
+           <button class = "dropdownHoverButton" id="mediaButton">Medien <img src = "/images/down_arrow.png" alt = "icon" ></button>
+           <div class = "dropdownContent">
+               <button onclick = "location.href='/media/overview'">Übersicht</button>
+               <button onclick = "location.href='/bookseries'">Buchserien</button>
+               <button onclick = "location.href='/books'">Bücher</button>
+               <button onclick = "location.href='/games'">Spiele</button>
+               <button onclick = "location.href='/movies'">Filme und Serien</button>
+           </div>
+       </div>
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+</div>
+
+<p th:text ="${'Titel: ' + movie.getTitle()}"></p>
+<p th:text ="${'Typ: ' + movie.getMovieType()}"></p>
+<p th:text ="${'Genre: ' + T(com.lalbr.core.media.general.Genre).toString(movie.getGenre())}"></p>
+<p th:text ="${'SubGenre: ' + T(com.lalbr.core.media.general.SubGenre).toString(movie.getSubgenre())}"></p>
+<p th:text ="${'Platform: ' + T(com.lalbr.core.media.general.Platform).toString(movie.getPlatform())}"></p>
+
+
+<footer class ="footer">
+   <p>Author: Lukas Albrecht</p>
+   <p>Software Engineer, Studying B.Sc. Computer Science</p>
+   <a href="mailto:lukas.albrecht-coding@web.de">Mail Contact</a>
+   <a href="https://github.com/lal02">Github</a>
+</footer>
+</body>
+<link rel="stylesheet" href="/css/general.css">
+
+</html>

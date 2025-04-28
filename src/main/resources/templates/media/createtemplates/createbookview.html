@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buch hinzufügen</title>
+</head>
+<body>
+<div class="header">
+  <div class = "headerButtonBar">
+    <h1 style="text-align: center" >Centralized Web Application</h1>
+
+    <button onclick = "location.href='/'">Home</button>
+    <button onclick = "location.href='/sensordata'">Sensordaten</button>
+    <button onclick = "location.href='/rezepte'">Rezepte</button>
+    <div class="dropdown">
+      <button class = "dropdownHoverButton" id="toolsButton">Tools <img src = "/images/down_arrow.png" alt = "icon" ></button>
+      <div class = "dropdownContent">
+        <!--<button onclick = "location.href='/tools/converter'" >Einheiten Konvertierer</button>-->
+       <button onclick = "location.href='/tools/finanzrechner'">Finanzrechner</button>
+       <button onclick = "location.href='/tools/finnishconjugation'">Finnish Conjugation</button>
+        <!--<button onclick = "location.href='/tools/gamescalculator'">Spielerechner</button>-->
+       <button onclick = "location.href='/tools/passwordgenerator'">Passwort Generator</button>
+       <button onclick = "location.href='/tools/counter'">Textanalyse</button>
+       <button onclick = "location.href=('http://10.0.10.221:8080')">pdf Tools</button>
+     </div>
+   </div>
+   <div class="dropdown">
+     <button class = "dropdownHoverButton" id="mediaButton">Medien <img src = "/images/down_arrow.png" alt = "icon" ></button>
+     <div class = "dropdownContent">
+       <button onclick = "location.href='/media/overview'">Übersicht</button>
+       <button onclick = "location.href='/bookseries'">Buchserien</button>
+       <button onclick = "location.href='/books'">Bücher</button>
+       <button onclick = "location.href='/games'">Spiele</button>
+       <button onclick = "location.href='/movies'">Filme und Serien</button>
+     </div>
+   </div>
+ </div>
+ <br>
+ <br>
+ <h2 style="text-align:center">Buch hinzufügen</h2>
+ <br>
+</div>
+
+<!-- ab hier input-->
+<div class="form-group">
+  <label for="title">Titel</label>
+  <input type="text" id="title" name="title">
+</div>
+<div class="form-group">
+  <label for="author">Author</label>
+  <input type="text" id="author" name="author">
+</div>
+<div class="form-group">
+  <label for="language">Sprache</label>
+  <input type="text" id="language" name="language">
+</div>
+<div class="form-group">
+  <label for="pages">Seitenzahl</label>
+  <input type="text" id="pages" name="pages">
+</div>
+<div class="form-group">
+  <label for="readTrue">Gelesen</label>
+  <input type="radio" id="readTrue" name="read" value="yes"> Ja
+  <input type="radio" id="readFalse" name="read" value="no"> Nein
+</div>
+<div class="form-group">
+  <label for="series">Buchserie</label>
+  <input type="text" id="series" name="series">
+</div>
+<div class="form-group">
+  <label for="format">Format</label>
+  <input type="text" id="format" name="format">
+</div>
+<div class="form-group">
+  <label for="seriesPlace">Platz in Serie</label>
+  <input type="text" id="seriesPlace" name="seriesPlace">
+</div>
+<div class="center-button">
+  <button type="submit" id="submit">Submit</button>
+</div>
+
+
+<label id = "resultLabel"></label>
+
+<footer class ="footer">
+  <p>Author: Lukas Albrecht</p>
+  <p>Software Engineer, Studying B.Sc. Computer Science</p>
+  <a href="mailto:lukas.albrecht-coding@web.de">Mail Contact</a>
+  <a href="https://github.com/lal02">Github</a>
+</footer>
+
+</body>
+
+<link rel="stylesheet" href="/css/general.css">
+<link rel="stylesheet" href="/css/media/createtemplate.css">
+<script src ="/js/createbook.js"></script>
+
+</html>

@@ -1,0 +1,46 @@
+
+.headerButtonBar{
+    align-content: center;
+    text-align: left;
+}
+
+
+/*
+DROPDOWN BUTTON
+*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownHoverButton img{
+    width: 10px; /* Icon width */
+    height: 10px; /* Icon height */
+    margin-left: 5px; /* Space between text and icon */
+}
+
+.dropdownContent {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+.dropdownContent button {
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+}
+.dropdown:hover .dropdownContent {
+    display: flex; /* Show the hidden buttons */
+}
+/* Change background color of the dropdown buttons on hover */
+.dropdownContent button:hover {
+    background-color: darkgray;
+}

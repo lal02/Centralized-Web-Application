@@ -1,0 +1,32 @@
+.body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.module {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color:black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 90%);
+}
+
+.module h3 {
+    font-size: 1.2em; /* Anpassen der Schriftgröße der Überschrift */
+    margin-top: 0; /* Entfernen des oberen Abstands */
+    margin-bottom: 10px; /* Anpassen des unteren Abstands */
+    color: black; /* Sicherstellen, dass die Überschrift schwarz ist */
+}

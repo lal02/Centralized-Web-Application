@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sensordaten</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+    <div class = "headerButtonBar">
+        <h1 style="text-align: center" >Centralized Web Application</h1>
+
+        <button onclick = "location.href='/'">Home</button>
+        <button onclick = "location.href='/sensordata'">Sensordaten</button>
+        <button onclick = "location.href='/rezepte'">Rezepte</button>
+        <div class="dropdown">
+            <button class = "dropdownHoverButton" id="toolsButton">Tools <img src = "/images/down_arrow.png" alt = "icon" ></button>
+            <div class = "dropdownContent">
+                <!--<button onclick = "location.href='/tools/converter'" >Einheiten Konvertierer</button>-->
+               <button onclick = "location.href='/tools/finanzrechner'">Finanzrechner</button>
+               <button onclick = "location.href='/tools/finnishconjugation'">Finnish Conjugation</button>
+                <!--<button onclick = "location.href='/tools/gamescalculator'">Spielerechner</button>-->
+               <button onclick = "location.href='/tools/passwordgenerator'">Passwort Generator</button>
+               <button onclick = "location.href='/tools/counter'">Textanalyse</button>
+               <button onclick = "location.href=('http://10.0.10.221:8080')">pdf Tools</button>
+           </div>
+       </div>
+       <div class="dropdown">
+           <button class = "dropdownHoverButton" id="mediaButton">Medien <img src = "/images/down_arrow.png" alt = "icon" ></button>
+           <div class = "dropdownContent">
+               <button onclick = "location.href='/media/overview'">Übersicht</button>
+               <button onclick = "location.href='/bookseries'">Buchserien</button>
+               <button onclick = "location.href='/books'">Bücher</button>
+               <button onclick = "location.href='/games'">Spiele</button>
+               <button onclick = "location.href='/movies'">Filme und Serien</button>
+           </div>
+       </div>
+   </div>
+   <br>
+   <br>
+   <br>
+   <h2 style="text-align:center">Sensordaten</h2>
+   <br>
+</div>
+
+<div class ="graphDivRow">
+   <div class = "temperatureDiv">
+       <div class = "sensorDataTimeSelection">
+           <h3>Temperatur und Luftfeuchtigkeit</h3>
+           <button id = "todayButton">Heute</button>
+           <button id = "weekButton">Woche</button>
+           <button id = "monthButton">Monat</button>
+           <button id = "yearButton">Jahr</button>
+           <button id = "alltimeButton">Gesamt</button>
+       </div>
+       <div class = "graphDiv">
+           <canvas id="temperatureGraph" width="700" height="400"></canvas>
+       </div>
+   </div>
+
+   <div class ="soilDiv">
+       <div class = "sensorDataTimeSelection">
+           <h3>Pflanzen Bodenfeuchtigkeit</h3>
+           <button id = "todaySoilButton">Heute</button>
+           <button id = "weekSoilButton">Woche</button>
+           <button id = "monthSoilButton">Monat</button>
+           <button id = "yearSoilButton">Jahr</button>
+           <button id = "alltimeSoilButton">Gesamt</button>
+       </div>
+
+       <div class = "graphDiv">
+           <canvas id="soilGraph" width="700" height="400"></canvas>
+       </div>
+   </div>
+</div>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<!--  <label for="start">Start</label> <br> -->
+<!-- <input id = "start" type="date"> -->
+
+
+<br>
+<br>
+<br>
+<br>
+
+<div class ="graphDivRow">
+    <div class ="lightDiv">
+        <div class = "sensorDataTimeSelection">
+            <h3>Helligkeit</h3>
+            <button id = "todayLightButton">Heute</button>
+            <button id = "weekLightButton">Woche</button>
+            <button id = "monthLightButton">Monat</button>
+            <button id = "yearLightButton">Jahr</button>
+            <button id = "alltimeLightButton">Gesamt</button>
+        </div>
+        <div class = "graphDiv">
+            <canvas id="lightGraph" width="700" height="400"></canvas>
+        </div>
+    </div>
+
+    <div class ="airDiv">
+        <div class = "sensorDataTimeSelection">
+            <h3>Allgemeine Luftqualität und Kohlenstoffmonoxid</h3>
+            <button id = "todayAQButton">Heute</button>
+            <button id = "weekAQButton">Woche</button>
+            <button id = "monthAQButton">Monat</button>
+            <button id = "yearAQButton">Jahr</button>
+            <button id = "alltimeAQButton">Gesamt</button>
+        </div>
+
+        <div class = "graphDiv">
+            <canvas id="AQGraph" width="700" height="400"></canvas>
+        </div>
+    </div>
+</div>
+
+<footer class ="footer">
+    <p>Author: Lukas Albrecht</p>
+    <p>Software Engineer, Studying B.Sc. Computer Science</p>
+    <a href="mailto:lukas.albrecht-coding@web.de">Mail Contact</a>
+    <a href="https://github.com/lal02">Github</a>
+</footer>
+
+</body>
+
+
+<script src="/js/sensordata.js"></script>
+<link rel="stylesheet" href="/css/general.css">
+<link rel="stylesheet" href="/css/sensordata.css">
+
+</html>

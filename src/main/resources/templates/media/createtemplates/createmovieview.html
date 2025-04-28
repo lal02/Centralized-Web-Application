@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Film oder Serie hinzufügen</title>
+</head>
+<body>
+<div class="header">
+  <div class = "headerButtonBar">
+    <h1 style="text-align: center" >Centralized Web Application</h1>
+
+    <button onclick = "location.href='/'">Home</button>
+    <button onclick = "location.href='/sensordata'">Sensordaten</button>
+    <button onclick = "location.href='/rezepte'">Rezepte</button>
+    <div class="dropdown">
+      <button class = "dropdownHoverButton" id="toolsButton">Tools <img src = "/images/down_arrow.png" alt = "icon" ></button>
+      <div class = "dropdownContent">
+        <!--<button onclick = "location.href='/tools/converter'" >Einheiten Konvertierer</button>-->
+       <button onclick = "location.href='/tools/finanzrechner'">Finanzrechner</button>
+       <button onclick = "location.href='/tools/finnishconjugation'">Finnish Conjugation</button>
+       <!--<button onclick = "location.href='/tools/gamescalculator'">Spielerechner</button>-->
+      <button onclick = "location.href='/tools/passwordgenerator'">Passwort Generator</button>
+      <button onclick = "location.href='/tools/counter'">Textanalyse</button>
+      <button onclick = "location.href=('http://10.0.10.221:8080')">pdf Tools</button>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class = "dropdownHoverButton" id="mediaButton">Medien <img src = "/images/down_arrow.png" alt = "icon" ></button>
+    <div class = "dropdownContent">
+      <button onclick = "location.href='/media/overview'">Übersicht</button>
+      <button onclick = "location.href='/bookseries'">Buchserien</button>
+      <button onclick = "location.href='/books'">Bücher</button>
+      <button onclick = "location.href='/games'">Spiele</button>
+      <button onclick = "location.href='/movies'">Filme und Serien</button>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<h2 style="text-align:center">Film oder Serie hinzufügen</h2>
+<br>
+</div>
+
+<!-- ab hier input-->
+<div class="form-group">
+  <label for="title">Titel</label>
+  <input type="text" id="title" name="title">
+</div>
+<div class="form-group">
+  <label for="platform">Platform</label>
+  <input type="text" id="platform" name="platform">
+</div>
+
+<div class="form-group">
+  <label for="movieType">movieType</label>
+  <input type="text" id="movieType" name="movieType">
+</div>
+
+<div class="form-group">
+  <label for="genre">Genre</label>
+  <input type="text" id="genre" name="genre">
+</div>
+
+<div class="form-group">
+  <label for="subgenre">Subgenre</label>
+  <input type="text" id="subgenre" name="subgenre">
+</div>
+
+
+
+<!-- Button und Result label    -->
+<div class="center-button">
+  <button type="submit" id="submit">Submit</button>
+</div>
+<label id = "resultLabel"></label>
+
+
+
+<footer class ="footer">
+  <p>Author: Lukas Albrecht</p>
+  <p>Software Engineer, Studying B.Sc. Computer Science</p>
+  <a href="mailto:lukas.albrecht-coding@web.de">Mail Contact</a>
+  <a href="https://github.com/lal02">Github</a>
+</footer>
+
+</body>
+
+<link rel="stylesheet" href="/css/general.css">
+<link rel="stylesheet" href="/css/media/createtemplate.css">
+<script src ="/js/createmovie.js"></script>
+
+</html>

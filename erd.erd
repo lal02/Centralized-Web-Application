@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="erd">
+	<entities>
+		<data-source id="postgres-jdbc-1964d34aeba-55eac6c81a6f296c">
+			<entity id="1" name="api_config" fq-name="public.api_config">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="2" name="api_config_field" fq-name="public.api_config_field">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="3" name="media_book" fq-name="public.media_book">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="4" name="media_bookseries" fq-name="public.media_bookseries">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="5" name="media_game" fq-name="public.media_game">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="6" name="media_movie" fq-name="public.media_movie">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="7" name="recipe" fq-name="public.recipe">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="8" name="recipe_food" fq-name="public.recipe_food">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="9" name="recipe_ingredient" fq-name="public.recipe_ingredient">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="10" name="recipe_ingredient_join" fq-name="public.recipe_ingredient_join">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="11" name="recipe_model_category" fq-name="public.recipe_model_category">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="12" name="recipe_model_tags" fq-name="public.recipe_model_tags">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="13" name="sensor_airquality" fq-name="public.sensor_airquality">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="14" name="sensor_co" fq-name="public.sensor_co">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="15" name="sensor_event" fq-name="public.sensor_event">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="16" name="sensor_humidity" fq-name="public.sensor_humidity">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="17" name="sensor_light" fq-name="public.sensor_light">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="18" name="sensor_soilhumidity" fq-name="public.sensor_soilhumidity">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+			<entity id="19" name="sensor_temperature" fq-name="public.sensor_temperature">
+				<path name="public"/>
+				<path name="learnifytools"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="api_config_field_api_config_fk" fq-name="public.api_config_field.api_config_field_api_config_fk" type="fk" pk-ref="1" fk-ref="2"/>
+		<relation name="media_book_media_bookseries_fk" fq-name="public.media_book.media_book_media_bookseries_fk" type="fk" pk-ref="4" fk-ref="3"/>
+		<relation name="media_game_media_bookseries_fk" fq-name="public.media_game.media_game_media_bookseries_fk" type="fk" pk-ref="4" fk-ref="5"/>
+		<relation name="recipe_ingredient_join_recipe_fk" fq-name="public.recipe_ingredient_join.recipe_ingredient_join_recipe_fk" type="fk" pk-ref="7" fk-ref="10"/>
+		<relation name="recipe_model_category_recipe_fk" fq-name="public.recipe_model_category.recipe_model_category_recipe_fk" type="fk" pk-ref="7" fk-ref="11"/>
+		<relation name="recipe_model_tags_recipe_fk" fq-name="public.recipe_model_tags.recipe_model_tags_recipe_fk" type="fk" pk-ref="7" fk-ref="12"/>
+		<relation name="recipe_ingredient_recipe_food_fk" fq-name="public.recipe_ingredient.recipe_ingredient_recipe_food_fk" type="fk" pk-ref="8" fk-ref="9"/>
+		<relation name="recipe_ingredient_join_recipe_ingredient_fk" fq-name="public.recipe_ingredient_join.recipe_ingredient_join_recipe_ingredient_fk" type="fk" pk-ref="9" fk-ref="10"/>
+	</relations>
+</diagram>

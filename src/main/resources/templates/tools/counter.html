@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="header">
+    <div class = "headerButtonBar">
+        <h1 style="text-align: center" >Centralized Web Application</h1>
+
+        <button onclick = "location.href='/'">Home</button>
+        <button onclick = "location.href='/sensordata'">Sensordaten</button>
+        <button onclick = "location.href='/rezepte'">Rezepte</button>
+        <div class="dropdown">
+            <button class = "dropdownHoverButton" id="toolsButton">Tools <img src = "/images/down_arrow.png" alt = "icon" ></button>
+            <div class = "dropdownContent">
+                <!--<button onclick = "location.href='/tools/converter'" >Einheiten Konvertierer</button>-->
+               <button onclick = "location.href='/tools/finanzrechner'">Finanzrechner</button>
+               <button onclick = "location.href='/tools/finnishconjugation'">Finnish Conjugation</button>
+                <!--<button onclick = "location.href='/tools/gamescalculator'">Spielerechner</button>-->
+               <button onclick = "location.href='/tools/passwordgenerator'">Passwort Generator</button>
+               <button onclick = "location.href='/tools/counter'">Textanalyse</button>
+               <button onclick = "location.href=('http://10.0.10.221:8080')">pdf Tools</button>
+           </div>
+       </div>
+       <div class="dropdown">
+           <button class = "dropdownHoverButton" id="mediaButton">Medien <img src = "/images/down_arrow.png" alt = "icon" ></button>
+           <div class = "dropdownContent">
+               <button onclick = "location.href='/media/overview'">Übersicht</button>
+               <button onclick = "location.href='/bookseries'">Buchserien</button>
+               <button onclick = "location.href='/books'">Bücher</button>
+               <button onclick = "location.href='/games'">Spiele</button>
+               <button onclick = "location.href='/movies'">Filme und Serien</button>
+           </div>
+       </div>
+   </div>
+   <br>
+   <br>
+   <h2 style="text-align:center">Textanalyse</h2>
+   <br>
+</div>
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 20px;">
+   <textarea id="textInput"></textarea>
+   <div id="checkboxDiv">
+       <label>Wörter</label>    <input type="checkbox" id = wordsCheckbox>
+       <label>Zeichen</label> <input type="checkbox" id = charsCheckbox>
+       <label>Leerzeilen</label> <input type="checkbox" id="emptyLinesCheckbox">
+       <label>Leerzeichen</label> <input type="checkbox" id="spaceCheckbox">
+   </div>
+</div>
+
+
+
+<div id="resultDiv">
+   <p id ="wordsResult">Wörter gesamt:</p>
+   <p id ="charsResult">Zeichen gesamt:</p>
+   <p id ="emptyLinesResult">Leerzeilen gesamt:</p>
+   <p id ="spacesResult">Leerzeichen gesamt:</p>
+</div>
+
+<div style="padding-bottom: 10px">
+   <button id="calculateButton">Zählen!</button>
+</div>
+
+<!-- <label>Wörter</label> <input type="checkbox">-->
+
+
+<footer class ="footer">
+    <p>Author: Lukas Albrecht</p>
+    <p>Software Engineer, Studying B.Sc. Computer Science</p>
+    <a href="mailto:lukas.albrecht-coding@web.de">Mail Contact</a>
+    <a href="https://github.com/lal02">Github</a>
+</footer>
+</body>
+
+<script src = "/js/counter.js"></script>
+<link rel="stylesheet" href="/css/tools/counter.css">
+<link rel="stylesheet" href="/css/general.css">
+
+</html>

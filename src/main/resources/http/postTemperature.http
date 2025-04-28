@@ -1,0 +1,15 @@
+###
+
+# curl -X POST http://localhost:8080/wordstorage
+#-H "Content-Type: application/json"
+#-d '{"word": "example", "value": 42.0}'
+POST http://localhost:8080/temperature
+Content-Type: application/json
+
+{
+  "value" : 10.0,
+  "timestamp": "2026-11-01T23:13:36"
+}
+
+###
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>User Form</h1>
+<form action="#" th:action="@{/rezeptersteller}" th:object="${rezept}" method="post">
+    <label>Name:</label>
+    <input type="text" th:field="*{name}" /><br/>
+
+    <label>Description:</label>
+    <input type="text" th:field="*{description}" /><br/>
+
+    <label>Tags:</label>
+    <input type="text" th:field="*{tags}" /><br/>
+
+    <label>Categories:</label>
+    <input type="text" th:field="*{category}" /><br/>
+
+    <label>Duration:</label>
+    <input type="text" th:field="*{duration}" /><br/>
+
+    <label>Mealprep:</label>
+    <input type="checkbox" th:field="*{mealPrep}" /><br/>
+
+    <label>Ingredients:</label>
+    <input type="text" th:field="*{ingredientModels}" /><br/>
+
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

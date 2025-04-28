@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<div class="header">
+    <div class = "headerButtonBar">
+        <h1 style="text-align: center" >Centralized Web Application</h1>
+
+        <button onclick = "location.href='/'">Home</button>
+        <button onclick = "location.href='/sensordata'">Sensordaten</button>
+        <button onclick = "location.href='/rezepte'">Rezepte</button>
+        <div class="dropdown">
+            <button class = "dropdownHoverButton" id="toolsButton">Tools <img src = "/images/down_arrow.png" alt = "icon" ></button>
+            <div class = "dropdownContent">
+                <!--<button onclick = "location.href='/tools/converter'" >Einheiten Konvertierer</button>-->
+                <button onclick = "location.href='/tools/finanzrechner'">Finanzrechner</button>
+                <button onclick = "location.href='/tools/finnishconjugation'">Finnish Conjugation</button>
+                <!--<button onclick = "location.href='/tools/gamescalculator'">Spielerechner</button>-->
+               <button onclick = "location.href='/tools/passwordgenerator'">Passwort Generator</button>
+               <button onclick = "location.href='/tools/counter'">Textanalyse</button>
+               <button onclick = "location.href=('http://10.0.10.221:8080')">pdf Tools</button>
+           </div>
+       </div>
+       <div class="dropdown">
+           <button class = "dropdownHoverButton" id="mediaButton">Medien <img src = "/images/down_arrow.png" alt = "icon" ></button>
+           <div class = "dropdownContent">
+               <button onclick = "location.href='/media/overview'">Übersicht</button>
+               <button onclick = "location.href='/bookseries'">Buchserien</button>
+               <button onclick = "location.href='/books'">Bücher</button>
+               <button onclick = "location.href='/games'">Spiele</button>
+               <button onclick = "location.href='/movies'">Filme und Serien</button>
+           </div>
+       </div>
+   </div>
+   <br>
+   <br>
+   <h2 style="text-align:center">Home</h2>
+
+   <br>
+</div>
+
+<div class="container">
+   <div class="module" th:each="result : ${apiResults}">
+       <h3 th:text="${result.getTitle()}">Überschrift</h3>
+       <div th:utext="${result.getValue()}"></div>
+   </div>
+
+</div>
+
+
+<footer class ="footer">
+   <p>Author: Lukas Albrecht</p>
+   <p>Software Engineer, Studying B.Sc. Computer Science</p>
+   <a href="mailto:lukas.albrecht-coding@web.de">Mail Contact</a>
+   <a href="https://github.com/lal02">Github</a>
+</footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/save-ukraine@0.18.0/dist/umd/main.js" integrity="sha384-Xn1RAG80M8PZlBQh3r8fUvHY7c8RtuplSnqXOkdJyCxqRsToRwJ1m2FP7vyJo7u/" crossorigin="anonymous"></script>
+<script>
+   Ukraine.save({
+       ribbon: 'TOP_LEFT',
+       hasShadow: true,
+       countries: [],
+   });
+</script>
+<link rel="stylesheet" href="/css/general.css">
+<link rel="stylesheet" href="/css/index.css">
+</html>
