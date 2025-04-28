@@ -1,4 +1,4 @@
-# Core
+# Centralized Web Application
 Dieses Projekt ist eine persönliche Website mit einigen Tools und Features.
 
 ## Motivation
@@ -23,7 +23,7 @@ Derzeit sind folgende APIs in der Datenbank eingetragen:
 ![](images/features_dashboard.png)
 
 Weitere APIs können modular eingebunden werden aktuell noch durch einen manuellen Eintrag in der Datenbank. 
-Dort müssen die API-URL und die auszulesenden fields spezifiziert werden.
+Dort müssen die API-URL und die auszulesenden fields spezifiziert werden. Geparsed werden die Ergebnisse mit Jackson Databind
 
 ### Sensordaten
 Eine Übersicht der angeschlossenen Sensordaten, inklusive Filtermöglichkeiten.
