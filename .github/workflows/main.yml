@@ -21,11 +21,11 @@ jobs:
 
     - name: Set Environment Variables on Server
       run: |
-        echo "EMAIL_HOST=$EMAIL_HOST" >> /etc/environment
-        echo "EMAIL_PORT=$EMAIL_PORT" >> /etc/environment
-        echo "EMAIL_USERNAME=$EMAIL_USERNAME" >> /etc/environment
-        echo "EMAIL_PASSWORD=$EMAIL_PASSWORD" >> /etc/environment
-        echo "EMAIL_TARGET=$EMAIL_TARGET" >> /etc/environment        
+        sudo echo "EMAIL_HOST=$EMAIL_HOST" >> /etc/environment
+        sudo echo "EMAIL_PORT=$EMAIL_PORT" >> /etc/environment
+        sudo echo "EMAIL_USERNAME=$EMAIL_USERNAME" >> /etc/environment
+        sudo echo "EMAIL_PASSWORD=$EMAIL_PASSWORD" >> /etc/environment
+        sudo echo "EMAIL_TARGET=$EMAIL_TARGET" >> /etc/environment        
         
     - name: Build with Maven
       run: mvn package -DskipTests -X
