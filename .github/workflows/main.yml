@@ -8,6 +8,14 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted
+    
+    env:
+      EMAIL_HOST: ${{ secrets.EMAIL_HOST }}
+      EMAIL_PORT: ${{ secrets.EMAIL_PORT }}
+      EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+      EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+      EMAIL_TARGET: ${{ secrets.EMAIL_TARGET }}
+
 
     steps:
     - name: Checkout code
