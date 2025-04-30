@@ -8,18 +8,12 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted
-    
     env:
       EMAIL_HOST: ${{ secrets.EMAIL_HOST }}
       EMAIL_PORT: ${{ secrets.EMAIL_PORT }}
       EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
       EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
       EMAIL_TARGET: ${{ secrets.EMAIL_TARGET }}
-
-    
-     
-
-
 
     steps:
     - name: Checkout code
@@ -30,9 +24,9 @@ jobs:
         echo "EMAIL_HOST: $EMAIL_HOST"
         echo "EMAIL_PORT: $EMAIL_PORT"
         echo "EMAIL_USERNAME: $EMAIL_USERNAME"
+        echo "EMAIL_PORT: $EMAIL_PORT"
         echo "EMAIL_TARGET: $EMAIL_TARGET"
-        echo "TOMCAT_URL: $TOMCAT_URL"
-
+        
         
     - name: Build with Maven
       run: mvn package -DskipTests -X
