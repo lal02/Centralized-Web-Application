@@ -18,15 +18,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      
-    - name: Debug Environment Variables
+
+    - name: Set Environment Variables on Server
       run: |
-        echo "EMAIL_HOST: $EMAIL_HOST"
-        echo "EMAIL_PORT: $EMAIL_PORT"
-        echo "EMAIL_USERNAME: $EMAIL_USERNAME"
-        echo "EMAIL_PORT: $EMAIL_PORT"
-        echo "EMAIL_TARGET: $EMAIL_TARGET"
-        
+        echo "EMAIL_HOST=$EMAIL_HOST" >> /etc/environment
+        echo "EMAIL_PORT=$EMAIL_PORT" >> /etc/environment
+        echo "EMAIL_USERNAME=$EMAIL_USERNAME" >> /etc/environment
+        echo "EMAIL_PASSWORD=$EMAIL_PASSWORD" >> /etc/environment
+        echo "EMAIL_TARGET=$EMAIL_TARGET" >> /etc/environment        
         
     - name: Build with Maven
       run: mvn package -DskipTests -X
