@@ -1,0 +1,26 @@
+name: Deploy to Tomcat on rasppi
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build with Maven
+      run: mvn package -DskipTests -X
+     
+    - name: Deploy to Tomcat
+      env:
+        TOMCAT_URL: ${{ secrets.TOMCAT_URL }}
+        TOMCAT_USER: ${{ secrets.TOMCAT_USER }}
+        TOMCAT_PASSWORD: ${{ secrets.TOMCAT_PASSWORD }}
+      run: |
+        curl -u $TOMCAT_USER:$TOMCAT_PASSWORD "http://$TOMCAT_URL/manager/text/undeploy?path=/"
+        curl -u $TOMCAT_USER:$TOMCAT_PASSWORD --upload-file target/Centralized-Web-Application-4.0.war "http://$TOMCAT_URL/manager/text/deploy?path=/"
