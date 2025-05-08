@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
+    color:black;
 }
 td{
     border: solid black 1px;
