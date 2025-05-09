@@ -141,4 +141,20 @@ public class MediaService {
         return savedMovieModel;
     }
 
+    public int deleteMovieModelByTitle(String title){
+        return movieRepository.deleteAllByTitle(title);
+    }
+
+    public int deleteGameModelByTitle(String title){
+        return gameRepository.deleteAllByTitle(title);
+    }
+
+    public int deleteBookModelByTitle(String title){
+        return bookRepository.deleteAllByTitle(title);
+    }
+
+    public void deleteBookseriesModelById(long id){
+        bookSeriesRepository.deleteById(id);
+    }
+
 }

@@ -28,8 +28,6 @@ public class MediaController {
 
     @Autowired
     MediaService mediaservice;
-    @Autowired
-    private BookSeriesRepository bookSeriesRepository;
 
     /*
     ________________________________________________________________________________________________
@@ -50,7 +48,7 @@ public class MediaController {
         model.addAttribute("bookserieslist",mediaservice.findAllBookSeriesModel());
         model.addAttribute("gameslist",mediaservice.findAllGameModel());
         model.addAttribute("movielist",mediaservice.findAllMovieModel());
-        logger.info("########## media overview gett request ##########");
+        logger.info("########## media overview get request ##########");
         return "media/overview/mediaoverview";
     }
 

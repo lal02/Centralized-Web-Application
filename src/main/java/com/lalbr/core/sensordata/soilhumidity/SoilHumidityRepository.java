@@ -10,4 +10,6 @@ public interface SoilHumidityRepository extends JpaRepository<SoilHumidityModel,
     List<SoilHumidityModel> findSoilHumidityModelsBySensorid(int sensorId);
 
     SoilHumidityModel findFirstBySensoridOrderByTimestampDesc(int sensorId);
+
+    Integer deleteSoilHumidityModelsByValue(int value);
 }

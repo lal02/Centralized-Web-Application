@@ -10,4 +10,6 @@ public interface HumidityRepository extends JpaRepository<HumidityModel, Long> {
     List<HumidityModel> findHumidityModelsByTimestampBetween(LocalDateTime startOfDay, LocalDateTime endOfDay);
 
     HumidityModel findTopByOrderByTimestampDesc();
+
+    Integer deleteAllByValue(double value);
 }

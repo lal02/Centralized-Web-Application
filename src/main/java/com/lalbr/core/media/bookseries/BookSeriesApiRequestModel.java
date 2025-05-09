@@ -21,8 +21,8 @@ public class BookSeriesApiRequestModel {
         return amountBooks;
     }
 
-    public void setAmountBooks(int amountbooks) {
-        this.amountBooks = amountbooks;
+    public void setAmountBooks(int amountBooks) {
+        this.amountBooks = amountBooks;
     }
 
     public String getGenre() {

@@ -10,4 +10,6 @@ public interface LightRepository extends JpaRepository<LightModel, Long> {
     List<LightModel> findLightModelsByTimestampBetween(LocalDateTime startOfDay, LocalDateTime endOfDay);
 
     LightModel findTopByOrderByTimestampDesc();
+
+    Integer deleteAllByValue(double value);
 }

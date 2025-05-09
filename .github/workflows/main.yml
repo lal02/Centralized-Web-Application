@@ -1,4 +1,4 @@
-name: Deploy to Tomcat on rasppi
+name: Test and Deploy
 
 on:
   push:
@@ -6,16 +6,21 @@ on:
       - main 
 
 jobs:
-  deploy:
+  test:
     runs-on: self-hosted
-    
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
-    - name: Build with Maven
+    - name: Execute Test Cases
+      run: mvn test -X
+  deploy:
+    runs-on: self-hosted
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Maven Build
       run: mvn package -DskipTests -X
-     
+
     - name: Deploy to Tomcat
       env:
         TOMCAT_URL: ${{ secrets.TOMCAT_URL }}

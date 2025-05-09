@@ -11,4 +11,6 @@ public interface TemperatureRepository extends JpaRepository<TemperatureModel, L
     List<TemperatureModel> findTemperatureModelsByTimestampBetween(LocalDateTime startOfDay, LocalDateTime endOfDay);
 
     TemperatureModel findTopByOrderByTimestampDesc();
+
+    Integer deleteAllByValue(double Value);
 }

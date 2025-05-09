@@ -10,4 +10,6 @@ public interface AirqualityRepository  extends JpaRepository<AirqualityModel, Lo
     List<AirqualityModel> findAirqualityModelsByTimestampBetween(LocalDateTime startOfDay, LocalDateTime endOfDay);
 
     AirqualityModel findTopByOrderByTimestampDesc();
+
+    Integer deleteAllByValue(int value);
 }

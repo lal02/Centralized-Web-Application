@@ -216,4 +216,27 @@ public class SensorDataService {
         return soilHumidityRepository.findFirstBySensoridOrderByTimestampDesc(id);
     }
 
+    public Integer deleteAllTemperatureByValue(double value){
+        return temperatureRepository.deleteAllByValue(value);
+    }
+
+    public Integer deleteAllHumidityByValue(double value){
+        return humidityRepository.deleteAllByValue(value);
+    }
+
+    public Integer deleteAllSoilHumidityByValue(int value){
+        return soilHumidityRepository.deleteSoilHumidityModelsByValue(value);
+    }
+
+    public Integer deleteAllCOByValue(int value){
+        return coRepository.deleteAllByValue(value);
+    }
+
+    public Integer deleteAllAirqualityByValue(int value){
+        return airqualityRepository.deleteAllByValue(value);
+    }
+
+    public Integer deleteAllLightByValue(int value){
+        return lightRepository.deleteAllByValue(value);
+    }
 }
