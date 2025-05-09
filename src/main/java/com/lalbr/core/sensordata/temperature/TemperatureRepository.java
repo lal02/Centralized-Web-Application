@@ -1,4 +1,4 @@
-package com.lalbr.core.sensordata.temperature;
+package com.lalbr.cwapp.sensordata.temperature;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

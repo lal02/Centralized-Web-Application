@@ -1,4 +1,4 @@
-package com.lalbr.core.dashboard;
+package com.lalbr.cwapp.dashboard;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;

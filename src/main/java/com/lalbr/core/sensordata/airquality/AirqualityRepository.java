@@ -1,6 +1,6 @@
-package com.lalbr.core.sensordata.airquality;
+package com.lalbr.cwapp.sensordata.airquality;
 
-import com.lalbr.core.sensordata.carbonmonoxide.COModel;
+import com.lalbr.cwapp.sensordata.carbonmonoxide.COModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDateTime;

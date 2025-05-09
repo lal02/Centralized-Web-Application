@@ -1,4 +1,4 @@
-package com.lalbr.core.sensordata;
+package com.lalbr.cwapp.sensordata;
 
 public enum TimeSpan{
 

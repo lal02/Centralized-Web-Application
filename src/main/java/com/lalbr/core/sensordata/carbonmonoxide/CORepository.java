@@ -1,4 +1,4 @@
-package com.lalbr.core.sensordata.carbonmonoxide;
+package com.lalbr.cwapp.sensordata.carbonmonoxide;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDateTime;

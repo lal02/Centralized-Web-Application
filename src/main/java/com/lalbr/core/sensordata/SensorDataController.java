@@ -1,12 +1,12 @@
-package com.lalbr.core.sensordata;
+package com.lalbr.cwapp.sensordata;
 
-import com.lalbr.core.sensordata.airquality.AirqualityModel;
-import com.lalbr.core.sensordata.carbonmonoxide.COModel;
-import com.lalbr.core.sensordata.humidity.HumidityModel;
-import com.lalbr.core.sensordata.light.LightModel;
-import com.lalbr.core.sensordata.soilhumidity.SoilHumidityModel;
-import com.lalbr.core.sensordata.temperature.TemperatureModel;
-import com.lalbr.core.util.MailSenderService;
+import com.lalbr.cwapp.sensordata.airquality.AirqualityModel;
+import com.lalbr.cwapp.sensordata.carbonmonoxide.COModel;
+import com.lalbr.cwapp.sensordata.humidity.HumidityModel;
+import com.lalbr.cwapp.sensordata.light.LightModel;
+import com.lalbr.cwapp.sensordata.soilhumidity.SoilHumidityModel;
+import com.lalbr.cwapp.sensordata.temperature.TemperatureModel;
+import com.lalbr.cwapp.util.MailSenderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

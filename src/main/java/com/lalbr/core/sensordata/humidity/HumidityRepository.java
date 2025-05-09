@@ -1,4 +1,4 @@
-package com.lalbr.core.sensordata.humidity;
+package com.lalbr.cwapp.sensordata.humidity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

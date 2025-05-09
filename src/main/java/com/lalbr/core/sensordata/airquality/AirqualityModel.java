@@ -1,4 +1,4 @@
-package com.lalbr.core.sensordata.airquality;
+package com.lalbr.cwapp.sensordata.airquality;
 
 import jakarta.persistence.*;
 

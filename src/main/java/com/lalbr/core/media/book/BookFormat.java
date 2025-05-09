@@ -1,4 +1,4 @@
-package com.lalbr.core.media.book;
+package com.lalbr.cwapp.media.book;
 
 public enum BookFormat {
     Taschenbuch,

@@ -1,6 +1,6 @@
-package com.lalbr.core.apitests;
+package com.lalbr.cwapp.apitests;
 
-import com.lalbr.core.sensordata.SensorDataService;
+import com.lalbr.cwapp.sensordata.SensorDataService;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

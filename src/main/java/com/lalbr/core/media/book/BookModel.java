@@ -1,7 +1,7 @@
-package com.lalbr.core.media.book;
+package com.lalbr.cwapp.media.book;
 
-import com.lalbr.core.media.bookseries.BookSeriesModel;
-import com.lalbr.core.media.general.Language;
+import com.lalbr.cwapp.media.bookseries.BookSeriesModel;
+import com.lalbr.cwapp.media.general.Language;
 import jakarta.persistence.*;
 
 @Entity

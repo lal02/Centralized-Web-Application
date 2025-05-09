@@ -1,4 +1,4 @@
-package com.lalbr.core.media.movie;
+package com.lalbr.cwapp.media.movie;
 
 public class MovieApiRequestModel {
 

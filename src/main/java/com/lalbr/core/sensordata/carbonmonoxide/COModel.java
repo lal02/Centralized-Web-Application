@@ -1,4 +1,4 @@
-package com.lalbr.core.sensordata.carbonmonoxide;
+package com.lalbr.cwapp.sensordata.carbonmonoxide;
 
 import jakarta.persistence.*;
 

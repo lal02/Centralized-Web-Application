@@ -1,4 +1,4 @@
-package com.lalbr.core.media.general;
+package com.lalbr.cwapp.media.general;
 
 public enum Language {
     Deutsch,

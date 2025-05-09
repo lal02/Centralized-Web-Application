@@ -1,8 +1,8 @@
-package com.lalbr.core.media.movie;
+package com.lalbr.cwapp.media.movie;
 
-import com.lalbr.core.media.general.Genre;
-import com.lalbr.core.media.general.Platform;
-import com.lalbr.core.media.general.SubGenre;
+import com.lalbr.cwapp.media.general.Genre;
+import com.lalbr.cwapp.media.general.Platform;
+import com.lalbr.cwapp.media.general.SubGenre;
 import jakarta.persistence.*;
 
 @Entity

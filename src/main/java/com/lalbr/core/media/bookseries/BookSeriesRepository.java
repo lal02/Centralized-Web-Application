@@ -1,4 +1,4 @@
-package com.lalbr.core.media.bookseries;
+package com.lalbr.cwapp.media.bookseries;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

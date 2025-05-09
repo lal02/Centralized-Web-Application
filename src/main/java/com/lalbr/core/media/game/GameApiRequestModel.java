@@ -1,4 +1,4 @@
-package com.lalbr.core.media.game;
+package com.lalbr.cwapp.media.game;
 
 public class GameApiRequestModel {
 

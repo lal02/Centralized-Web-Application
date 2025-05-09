@@ -1,4 +1,4 @@
-package com.lalbr.core.sensordata.temperature;
+package com.lalbr.cwapp.sensordata.temperature;
 
 import jakarta.persistence.*;
 import org.springframework.data.annotation.Id;

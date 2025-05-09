@@ -1,4 +1,4 @@
-package com.lalbr.core.sensordata.light;
+package com.lalbr.cwapp.sensordata.light;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

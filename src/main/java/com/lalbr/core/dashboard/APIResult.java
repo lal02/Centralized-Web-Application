@@ -1,4 +1,4 @@
-package com.lalbr.core.dashboard;
+package com.lalbr.cwapp.dashboard;
 
 public class APIResult {
 

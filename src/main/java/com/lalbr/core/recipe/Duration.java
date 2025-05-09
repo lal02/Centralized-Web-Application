@@ -1,4 +1,4 @@
-package com.lalbr.core.recipe;
+package com.lalbr.cwapp.recipe;
 
 public enum Duration {
     kurz,mittel,lang;

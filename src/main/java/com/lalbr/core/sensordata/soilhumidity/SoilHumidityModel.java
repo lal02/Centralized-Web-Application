@@ -1,4 +1,4 @@
-package com.lalbr.core.sensordata.soilhumidity;
+package com.lalbr.cwapp.sensordata.soilhumidity;
 
 import jakarta.persistence.*;
 

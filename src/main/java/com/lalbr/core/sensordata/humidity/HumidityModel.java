@@ -1,4 +1,4 @@
-package com.lalbr.core.sensordata.humidity;
+package com.lalbr.cwapp.sensordata.humidity;
 
 import jakarta.persistence.*;
 

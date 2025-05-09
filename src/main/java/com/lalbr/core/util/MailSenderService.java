@@ -1,4 +1,4 @@
-package com.lalbr.core.util;
+package com.lalbr.cwapp.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

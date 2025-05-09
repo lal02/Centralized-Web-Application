@@ -1,9 +1,9 @@
-package com.lalbr.core.media.game;
+package com.lalbr.cwapp.media.game;
 
-import com.lalbr.core.media.general.Genre;
-import com.lalbr.core.media.general.Platform;
-import com.lalbr.core.media.general.SubGenre;
-import com.lalbr.core.media.bookseries.BookSeriesModel;
+import com.lalbr.cwapp.media.general.Genre;
+import com.lalbr.cwapp.media.general.Platform;
+import com.lalbr.cwapp.media.general.SubGenre;
+import com.lalbr.cwapp.media.bookseries.BookSeriesModel;
 import jakarta.persistence.*;
 
 @Entity

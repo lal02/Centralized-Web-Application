@@ -1,15 +1,15 @@
-package com.lalbr.core.media.general;
+package com.lalbr.cwapp.media.general;
 
-import com.lalbr.core.media.bookseries.Status;
-import com.lalbr.core.media.book.*;
-import com.lalbr.core.media.bookseries.BookSeriesApiRequestModel;
-import com.lalbr.core.media.bookseries.BookSeriesModel;
-import com.lalbr.core.media.bookseries.BookSeriesRepository;
-import com.lalbr.core.media.game.GameApiRequestModel;
-import com.lalbr.core.media.game.GameModel;
-import com.lalbr.core.media.movie.MovieApiRequestModel;
-import com.lalbr.core.media.movie.MovieModel;
-import com.lalbr.core.media.movie.MovieType;
+import com.lalbr.cwapp.media.bookseries.Status;
+import com.lalbr.cwapp.media.book.*;
+import com.lalbr.cwapp.media.bookseries.BookSeriesApiRequestModel;
+import com.lalbr.cwapp.media.bookseries.BookSeriesModel;
+import com.lalbr.cwapp.media.bookseries.BookSeriesRepository;
+import com.lalbr.cwapp.media.game.GameApiRequestModel;
+import com.lalbr.cwapp.media.game.GameModel;
+import com.lalbr.cwapp.media.movie.MovieApiRequestModel;
+import com.lalbr.cwapp.media.movie.MovieModel;
+import com.lalbr.cwapp.media.movie.MovieType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

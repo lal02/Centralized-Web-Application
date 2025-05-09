@@ -1,4 +1,4 @@
-package com.lalbr.core.recipe;
+package com.lalbr.cwapp.recipe;
 
 import jakarta.persistence.*;
 

@@ -1,4 +1,4 @@
-package com.lalbr.core.tools;
+package com.lalbr.cwapp.tools;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

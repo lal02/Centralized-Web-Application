@@ -1,13 +1,13 @@
-package com.lalbr.core.media.general;
+package com.lalbr.cwapp.media.general;
 
-import com.lalbr.core.media.book.BookModel;
-import com.lalbr.core.media.book.BookRepository;
-import com.lalbr.core.media.bookseries.BookSeriesModel;
-import com.lalbr.core.media.bookseries.BookSeriesRepository;
-import com.lalbr.core.media.game.GameModel;
-import com.lalbr.core.media.game.GameRepository;
-import com.lalbr.core.media.movie.MovieModel;
-import com.lalbr.core.media.movie.MovieRepository;
+import com.lalbr.cwapp.media.book.BookModel;
+import com.lalbr.cwapp.media.book.BookRepository;
+import com.lalbr.cwapp.media.bookseries.BookSeriesModel;
+import com.lalbr.cwapp.media.bookseries.BookSeriesRepository;
+import com.lalbr.cwapp.media.game.GameModel;
+import com.lalbr.cwapp.media.game.GameRepository;
+import com.lalbr.cwapp.media.movie.MovieModel;
+import com.lalbr.cwapp.media.movie.MovieRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
