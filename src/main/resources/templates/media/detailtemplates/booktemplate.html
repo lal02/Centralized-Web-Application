@@ -48,8 +48,8 @@
    th:text="${bookSeries != null} ? 'Teil von Buchserie: ' + ${bookSeries.getTitle()} : 'Teil von Buchserie: -'"></p>
 
 <p th:text ="${'Position in Buchserie: ' + book.getPlaceInSeries()?:'/'}"></p>
-<p th:text="${book.getBookSeriesModel() != null ? 'Genre von Buchserie: ' + T(com.lalbr.core.media.general.Genre).toString(book.getBookSeriesModel().getGenre()) : 'Genre: Keine Buchserien-Zugehörigkeit'}"></p>
-<p th:text="${book.getBookSeriesModel() != null ? 'SubGenre von Buchserie: ' + T(com.lalbr.core.media.general.SubGenre).toString(book.getBookSeriesModel().getSubgenre()) : 'Subgenre: Keine Buchserien Zugehörigkeit'}"></p>
+<p th:text="${book.getBookSeriesModel() != null ? 'Genre von Buchserie: ' + T(com.lalbr.cwapp.media.general.Genre).toString(book.getBookSeriesModel().getGenre()) : 'Genre: Keine Buchserien-Zugehörigkeit'}"></p>
+<p th:text="${book.getBookSeriesModel() != null ? 'SubGenre von Buchserie: ' + T(com.lalbr.cwapp.media.general.SubGenre).toString(book.getBookSeriesModel().getSubgenre()) : 'Subgenre: Keine Buchserien Zugehörigkeit'}"></p>
 <p th:text ="${'Vorhanden in: ' + book.getLanguage()}"></p>
 <p th:text ="${'Seitenzahl: ' + book.getPages()}"></p>
 <p th:text ="${'Bereits gelesen: ' + book.getReadAsString()}"></p>

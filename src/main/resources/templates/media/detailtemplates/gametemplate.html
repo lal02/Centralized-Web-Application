@@ -42,13 +42,13 @@
 </div>
 
 <p th:text ="${'Titel: ' + game.getTitle()}"></p>
-<p th:text ="${'Genre: ' + T(com.lalbr.core.media.general.Genre).toString(game.getGameGenre())}"></p>
-<p th:text ="${'Subgenre: ' + T(com.lalbr.core.media.general.SubGenre).toString(game.getGameSubGenre())}"></p>
+<p th:text ="${'Genre: ' + T(com.lalbr.cwapp.media.general.Genre).toString(game.getGameGenre())}"></p>
+<p th:text ="${'Subgenre: ' + T(com.lalbr.cwapp.media.general.SubGenre).toString(game.getGameSubGenre())}"></p>
 <p th:text ="${'Gamestudio: ' + game.getGamestudio()}"></p>
 <p th:attr="href=${game.getBookSeriesModel() != null} ? @{'/bookseries/' + ${game.getBookSeriesModel().getTitle()}} : ''"
    th:text="${game.getBookSeriesModel() != null} ? 'Teil von Buchserie: ' + ${game.getBookSeriesModel().getTitle()} : 'Teil von Buchserie: -'"></p>
 
-<p th:text ="${'Platform: ' + T(com.lalbr.core.media.general.Platform).toString(game.getPlatform())}"></p>
+<p th:text ="${'Platform: ' + T(com.lalbr.cwapp.media.general.Platform).toString(game.getPlatform())}"></p>
 <p th:text ="${'Durchgespielt: ' + game.getBooleanAsString(game.isCompleted())}"></p>
 <p th:text ="${'Coop: ' + game.getBooleanAsString(game.isCoop())}"></p>
 <p th:text ="${'PVP: ' + game.getBooleanAsString(game.isPvp())}"></p>
