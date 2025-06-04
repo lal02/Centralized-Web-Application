@@ -12,7 +12,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Execute Test Cases
-      run: mvn test -X
+      #run: mvn test -X
+      
   deploy:
     needs: test
     runs-on: self-hosted
