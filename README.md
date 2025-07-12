@@ -86,6 +86,4 @@ Allerdings ist dies für den Projektscope vollkommen akzeptabel.
 
 Die Webanwendung wurde in einen Tomcat Server deployed, in Form einer war Datei. 
 Zu Beginn wurde lediglich eine jar-Datei ausgeführt. Da in Zukunft aber womöglich noch andere Webanwendungen auf dem Pi laufen werden, wurde auf den Tomcat zum Verwalten aller Anwendungen gewechselt.
-
-Geplant ist demnächst eine CI/CD Pipeline zu erstellen und in diesem Zuge auch automatisierte Tests zu erstellen.
-
+Auf dem selben RaspberryPi läuft ebenfalls ein selfhosted Github Acions Runner.
